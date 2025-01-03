@@ -1,6 +1,6 @@
-import { db } from './Firebase'; 
-import { collection, addDoc } from "firebase/firestore";
+import { addDoc, collection } from "firebase/firestore";
 import React, { useState } from 'react';
+import { db } from './Firebase';
 
 const Booking = () => {
  const[fullName, setName] = useState('');
@@ -41,7 +41,7 @@ const Booking = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
           <div>
             <img
-              src="/About2.jpg"
+              src="./maldives.jpg"
               alt="Booking"
               className="w-full rounded-lg shadow-lg object-cover"
             />
